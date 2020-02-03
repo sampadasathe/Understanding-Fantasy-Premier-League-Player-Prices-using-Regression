@@ -1,4 +1,4 @@
-# Understanding-Fantasy-Premier-League-Prices
+# Understanding Fantasy Premier League Player Prices using Regression
 Detailed analysis of FPL player prices for 2017-18
 
 ## Business Problem
@@ -31,7 +31,7 @@ Age : We segregated the players into 6 age brackets as per the recommended busin
 ● Region : Nationality of the player<br>
 ● New signing : Whether the player was signed from another club this year<br>
 ● FPL selection : Percentage of FPL players who have selected that player in their team <br>
-● Big Club : Does the player play for a top 6 club? Manchester United F.C, Chelsea F.C, Manchester City F.C, Arsenal F.C, Liverpool F.C and Tottenham Hotspur F.C. If a player plays for any of these clubs, then the big club value for that player is marked as Boolean 1.
+● Big Club : Does the player play for a top 6 club? Manchester United F.C, Chelsea F.C, Manchester City F.C, Arsenal F.C, Liverpool F.C and Tottenham Hotspur F.C. If a player plays for any of these clubs, then the big club value for that player is marked as Boolean 1.<br>
 ● Club : The soccer club that the player plays for<br>
 In the collected dataset, there are a total of 457 players and the average FPL value of these players is 5.447 million pounds. The maximum FPL value in the dataset is 12.5 million pounds and the minimum FPL value is 4 million pounds. The average market value of these players is 11.02 million pounds. The maximum market value of the players is 75 million pounds and the minimum market value is as low as 0.05 million pounds. The minimum age of player in the data set is 17 while the maximum age is 38. The median age of players is 27 years. Minimum FPL points for a player in the dataset are 0 while maximum are 264 points. The average FPL points scored by the players in dataset is 57.44 points. There is a total of 156 players from England, 28 from Spain, 25 from France, 20 from Netherlands, 18 from Belgium, 17 from Argentina and another 196 players from other countries. The maximum number of Wikipedia page views for a player is 7664 while the minimum number of page views for a player is 3. The average value of Wikipedia page views is 765.3.<br>
 
