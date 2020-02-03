@@ -8,12 +8,12 @@ The price of the soccer players in FPL is a highly debated topic. Some believe a
 
 ## Data Description
 To answer these questions, we needed a comprehensive data set. We got our dataset from Kaggle. The data was for the 2017-18 season. The data we got was inherently messy and we had to clean it up before we could use it. We removed null values, impractical outliers and redundant or irrelevant columns. The final data set then contained the following information for each soccer player who played for the 2017-18 season: 
-● Name : Name of the soccer player
-● FPL value : The value of the soccer player in the game (in millions of pounds)
-• Market Value : The value of the soccer player in real life (in millions of pounds) 
-• FPL points : The points that the soccer player got in the game
-• Page views : Number of Wikipedia page views for the player 
-• Club : The soccer club that the player plays for
+● Name : Name of the soccer player <br>
+● FPL value : The value of the soccer player in the game (in millions of pounds)<br>
+• Market Value : The value of the soccer player in real life (in millions of pounds) <br>
+• FPL points : The points that the soccer player got in the game<br>
+• Page views : Number of Wikipedia page views for the player <br>
+• Club : The soccer club that the player plays for<br>
 Age : We segregated the players into 6 age brackets as per the recommended business standards. The reason for this categorization is that a player aged 18 and a player aged 19 is treated and priced in a similar fashion provided all other metrics of measurements are same. 
 ○ Category 1: 17 - 21 
 ○ Category 2: 22 - 24 
@@ -40,8 +40,8 @@ After performing multiple regression on this dataset, we recognized that only Bi
 Y(FPL value) = 4.77 + 0.131(Market value) + 0.002(FPL points) + 0.108(Age Category 2) + 0.411(Age Category 3) + 0.191(Age Category 4) + 0.161(Age Category 5) – 0.053(Age Category 6) – 0.387(Position Category 2) – 0.547(Position Category 3) – 0.514(Position Category 4) – 0.263(No Big Club) + 0.326(Non British Player) - 0.0627(Market Value * Age Category 2) – 0.0722(Market Value * Age Category 3) – 0.068(Market Value * Age Category 4) – 0.057(Market Value * Age Category 5) – 0.0004(Market Value * Age Category 6) + 0.008(FPL Points * Age Category 2) + 0.005(FPL Points * Age Category 3) + 0.007(FPL Points * Age Category 4) + 0.008(FPL Points * Age Category 5) + 0.010(FPL Points * Age Category 6) - 0.049(Market Value * Position Category 2) – 0.044(Market Value * Position Category 3) - 0.047(Market Value * Position Category 4) – 0.0005(FPL Points * Position Category 2) – 0.001(FPL Points * Position Category 3) – 0.005(FPL Points * Position Category 4) + 0.020(Market Value * No Big Club) -0.003(Market Value * No Big Club) + 0.0328(Market Value * Non British Player)
 
 Based on the above equation, we can derive the following relationships between FPL value and all the predictor variables:
-● For a British center forward player, who is playing for a big club and is aged between 18-21, FPL value increases by 13.12% for every dollar increase in market value.
-● For a British center forward player, who is playing for a big club, is aged between 18-21 and has a market value of 0, FPL value increases by 0.2% for every unit increase in FPL points. Since it’s not possible for a player to have a market value of 0, this interpretation is meaningless.
+● For a British center forward player, who is playing for a big club and is aged between 18-21, FPL value increases by 13.12% for every dollar increase in market value.<br>
+● For a British center forward player, who is playing for a big club, is aged between 18-21 and has a market value of 0, FPL value increases by 0.2% for every unit increase in FPL points. Since it’s not possible for a player to have a market value of 0, this interpretation is meaningless.<br>
 ● For a British center forward player, having FPL points 0, who is playing for a big club and is aged between 22-24, the degree of change in FPL value is 6.27% less than that caused by a British center forward player, who is playing for a big club and is aged between 18-21 for every dollar increase in market value.
 ● For a British center forward player, having FPL points 0, who is playing for a big club and is aged between 25-27, the degree of change in FPL value is 7.22% less than that caused by a British center forward player, who is playing for a big club and is aged between 18-21 for every dollar increase in market value.
 ● For a British center forward player, having FPL points 0, who is playing for a big club and is aged between 28-31, the degree of change in FPL value is 6.88% less than that caused by a British center forward player, who is playing for a big club and is aged between 18-21 for every dollar increase in market value.
